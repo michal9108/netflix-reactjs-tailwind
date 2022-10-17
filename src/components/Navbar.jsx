@@ -20,9 +20,7 @@ import { UserAuth } from '../context/AuthContext';
     return (
       <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
         <Link to='/'>
-          <h1 className='text-red-600 text-4xl font-bold cursor-pointer'>
-            NETFLIXds
-          </h1>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg' alt='Netflix' className='w-28' />
         </Link>
         {user?.email ? (
           <div>

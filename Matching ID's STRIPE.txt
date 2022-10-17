@@ -1,4 +1,7 @@
-Matching ID's STRIPE
+!!!This needs to be added to firebase "rules" tab for the stripe payments feature. 
+
+Matching ID's
+
 
 
 rules_version = '2';
