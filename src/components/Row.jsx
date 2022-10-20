@@ -15,11 +15,11 @@ const Row = ({ title, fetchURL, rowID }) => {
   }, [fetchURL])
 
   const slideLeft = () => {
-    var slider = document.getElementById('slider' + rowID);
+    var slider = document.getElementById('karo' + rowID);
     slider.scrollLeft = slider.scrollLeft - 500;
   };
   const slideRight = () => {
-    var slider = document.getElementById('slider' + rowID);
+    var slider = document.getElementById('karo' + rowID);
     slider.scrollLeft = slider.scrollLeft + 500;
   };
 
@@ -29,7 +29,7 @@ const Row = ({ title, fetchURL, rowID }) => {
       <div className='img-list relative flex items-center group '>
        <MdChevronLeft onClick={slideLeft} className='bg-white left-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40} />
         <div
-          id={'slider' + rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative img-list-li'>
+          id={'karo' + rowID} className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative img-list-li'>
           {movies.map((item, id) => (
             <Movie key={id} item={item} />
          ))}

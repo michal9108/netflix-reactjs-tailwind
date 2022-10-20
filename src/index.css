@@ -16,9 +16,8 @@ body{
 
 html {
   margin: 0;
-  background: #333;
+  background: #000000;
   font-family: helvetica;
-  max-width: 1920px;
   
 }
 ::-webkit-scrollbar,

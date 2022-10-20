@@ -1,31 +1,44 @@
 import React from "react";
+import Item from "./Item";
 
-function Footer() {
+const Footer = () => {
   return (
-    <>
-      <div className=" bottom-0 pt-2 mx-auto mb-0 w-screen bg-black opacity-50 h-24 ">
-        <p className="text-sm">Questions? Contact us.</p>
-        <div className=" text-white ">
-          <ul className="text-xs box-border m-0 p-0">
-            <li className="ml-0 pr-3 box-border">FAQ</li>
-            <li className="ml-0 pr-3 box-border">Help Center</li>
-            <li className="ml-0 pr-3 box-border">Terms of Use </li>
-            <li className="ml-0 pr-3 box-border">Privacy</li>
-
-            <li className="ml-0 pr-3 box-border">
-              {" "}
-              Cookie Preferences<br></br>
-            </li>
-            <li>Corporate Information</li>
-            <li className=" pt-1">
-              &copy;{new Date().getFullYear()} www.miskokdesi.sk | Only for
-              educational purposes{" "}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </>
+    <footer className=" bg-black text-white w-full absolute">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 sm:px-8 px-5 py-7">
+      <Item Links={COL1} title="Questions Contact us." />
+      <Item Links={COL2} title=""/>
+      <Item Links={COL3} title=""/>
+      <Item Links={COL4} title=""/>
+    </div>
+       <span className='text-gray-700 hover:underline duration-300
+          text-sm cursor-pointer leading-6'>&copy;{new Date().getFullYear()}www.miskokdesi.sk | Made with ❤️| Only for educational purposes</span>
+    </footer>
   );
-}
+};
 
 export default Footer;
+
+export const COL1 = [
+  { name: "FAQ", link: "#" },
+  { name: "Investor Relations", link: "#" },
+  { name: "Privacy", link: "#" },
+  { name: "Speed Test", link: "#" },
+];
+export const COL2 = [
+  { name: "Help Center", link: "#" },
+  { name: "Jobs", link: "#" },
+  { name: "Cookie Preferences", link: "#" },
+  { name: "Legal Guarantee", link: "#" },
+];
+export const COL3 = [
+  { name: "Account", link: "#" },
+  { name: "Ways to Watch",Link: "#" },
+  { name: "Corporate Information", link: "#" },
+  { name: "Legal Notices", link: "#" },
+];
+export const COL4 = [
+  { name: "Media Center", link: "#" },
+  { name: "Terms of Use", link: "#" },
+  { name: "Contact Us", link: "#" },
+  { name: "Only on Netflix", link: "#" },
+];

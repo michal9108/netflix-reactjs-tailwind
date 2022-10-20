@@ -10,11 +10,11 @@ const SavedShows = () => {
   const { user } = UserAuth();
 
   const slideLeft = () => {
-    var slider = document.getElementById('slider');
+    var slider = document.getElementById('karo');
     slider.scrollLeft = slider.scrollLeft - 500;
   };
   const slideRight = () => {
-    var slider = document.getElementById('slider');
+    var slider = document.getElementById('karo');
     slider.scrollLeft = slider.scrollLeft + 500;
   };
 
@@ -38,7 +38,6 @@ const SavedShows = () => {
 
   return (
     <>
-      <h2 className='text-white font-bold md:text-xl p-4'>My Shows</h2>
       <div className='relative flex items-center group'>
         <MdChevronLeft
           onClick={slideLeft}
@@ -46,7 +45,7 @@ const SavedShows = () => {
           size={40}
         />
         <div
-          id={'slider'}
+          id={'karo'}
           className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'
         >
           {movies.map((item) => (
@@ -55,6 +54,7 @@ const SavedShows = () => {
               className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'
             >
               <img
+                id="box1"
                 className='w-full h-auto block'
                 src={`https://image.tmdb.org/t/p/w500/${item?.img}`}
                 alt={item?.title}
