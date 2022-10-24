@@ -107,23 +107,23 @@ $ npm run build
 $ firebase init
 ```
 
-8. CLI - Choose **Hosting** Configure files for Firebase Hosting and (optionally) set up Github Action deploys
+8. CLI - Choose `Hosting` Configure files for Firebase Hosting and (optionally) set up Github Action deploys
 
 9. Use existing project <name of this project>
 
-10. What do you want to use as your public directory?  **build**
+10. What do you want to use as your public directory?  `build`
 
-11. Configure as a single-page app (rewrite all urls to /index.html)? **No**
+11. Configure as a single-page app (rewrite all urls to /index.html)? `No`
  
-12. Set up automatic builds and deploys with GitHub? (y/N) *y*
+12. Set up automatic builds and deploys with GitHub? (y/N) `y`
 
 13. For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)
 
-14.what script shoud run before every deploy? **npm ci && npm run build**
+14.what script shoud run before every deploy? `npm ci && npm run build`
 
-15.Set up automatic deployment to your site's live channel when a PR is merged *y*
+15.Set up automatic deployment to your site's live channel when a PR is merged `y`
 
-16. What is the name of the GitHub branch associated with your site's live channel?  - *main*
+16. What is the name of the GitHub branch associated with your site's live channel?  - `main`
 
 17. Start Deploy process:
 ```
