@@ -1,6 +1,6 @@
 # Netflix Clone - ReactJS + Tailwind + Firebase + Firestore + Stripe 
 
-<img src="https://github.com/michal9108/netflix-reactjs-tailwind/blob/7e959fb4b56a01a15c674df802a23f9265960466/netflix-clone.jpg" onClick="https://netflix-523e3.web.app/" width="100%" height="100%"/> 
+<a href="https://netflix-523e3.web.app/" target="blank"> <img src="https://github.com/michal9108/netflix-reactjs-tailwind/blob/7e959fb4b56a01a15c674df802a23f9265960466/netflix-clone.jpg" width="100%" height="100%"/> 
 </a>
 
 ## Link
